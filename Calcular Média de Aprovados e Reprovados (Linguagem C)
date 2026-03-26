@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    float va, vb, vc, vd, soma, media; //Declaração de variaveis
+    
+    printf("Digite o valor da primeira nota: "); //Leitura da primeira nota
+    scanf("%f", &va);//Processamento da primeira nota
+    printf("Digite o valor da segunda nota: ");//Leitura da segunda nota
+    scanf("%f", &vb);//Processamento da segunda nota
+    printf("Digite o valor da terceira nota: ");//Leitura da terceira nota
+    scanf("%f", &vc);//Processamento da terceira nota
+    printf("Digite o valor da quarta nota: ");//Leitura da quarta nota
+    scanf("%f", &vd);//Processamento da quarta nota
+    
+    soma= (va+vb+vc+vd)/4;//Soma e divisão das quatro notas
+    
+    if (media>=6){
+        printf("O aluno se econtra Aprovado com nota dê: %.2f ", soma);//Saída caso seja aprovado
+    }
+    else{
+        printf("O aluno se econtra Reprovado com nota dê: %.2f ", soma);//Saída caso seja reprovado
+    }
+    
+
+    return 0;
+}
