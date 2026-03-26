@@ -1,0 +1,122 @@
+#include <stdio.h>
+int ava;
+
+void inicio(){
+    printf("Bem vindo a central de atendimento ProtecGuard.\n");
+    printf("Disque a opção que melhor se adequa a sua necessidade.\n");
+    printf("-------------------------------------------------------------\n");
+    printf("1 - Para obter informações de nossa empresa.\n");
+    printf("2 - Para acessar detalhadamente nossos produtos.\n");
+    printf("3 - Para efetuar uma reclamacao.\n");
+    printf("4 - Para falar com um de nossos atendentes.\n");
+    printf("5 - Para finalizar o atendimento.\n");
+    printf("-------------------------------------------------------------\n");
+    printf("Digite a opção desejada: ");
+}
+void infos(){ //Void que seja apresentado no case 1.
+        printf("\nCNPJ:99.999.900/0009-90 \n");
+        printf("END: Rua imperial quadra 7 Nº 634, jardim do eden.\n");
+        printf("CEP: 09876-876\n");
+        printf("TEL: 56788-5473\n");
+        printf("Todos os direitos reservados a ProtecGuard.\n");
+        printf("\nSOBRE: Nossa empresa foi fundada com o intuito em atender serviços de tenologia e segurança por monitoramento de câmeras de alta tecnologia e confiabilidade.\n");
+        printf("\n");
+}
+void produtos(){ //Void que seja apresentado no case 2.
+        printf("Nossa empresa atualmente fornece os seguintes tipos de produtos para nossos clientes:\n");
+        printf("--------------------\n");
+        printf("Kit prata:  instalação de até 6 câmeras contendo infravermelho, audio e video, sistema de alerta a policia local.\n");
+        printf("--------------------\n");
+        printf("Kit ouro: instalação de até 12 câmeras contendo infravermelho, audio e video, gravação de imagem, captura de imagem, sistema de alerta a policia local.\n");
+        printf("--------------------\n");
+        printf("Kit diamante: instalação de até 24 câmeras contendo infravemelho, audio e video, gravação de imagem, captura de tela, monitoramento por inteligência artificial, sistema de alerta a policia local\n");
+        printf("--------------------\n");
+}
+void reclamar(){ //Void que seja apresentado no case 3.
+     printf("\nVocê acessou nosso canal de avaliações & reclamações.\n");
+            printf("Enviaremos uma série de 4 perguntas onde você poderá avaliar de 1 a 5 sendo 1 péssimo e 5 exelente.\n");
+            printf("--------------------\n");
+            printf("Em relação ao atendimento, suporte, velocidade e praticidade do nosso site qual seria sua nota?\n");
+            
+            printf("Digite sua nota de 1 a 5: ");
+            scanf("%d", &ava);
+            
+            while(ava<1, ava>5){
+        printf("\nA opcao digitada esta incorreta, digite novamente: ");
+        scanf("%d", &ava);
+            }
+            printf("--------------------\n");
+            
+            printf("Em relacao a nossos produtos o quao você se considera satisfeito?\n");
+            printf("Digite sua nota de 1 a 5: ");
+            scanf("%d", &ava);
+            while(ava<1, ava>5){
+        printf("\nA opção digitada está incorreta, digite novamente: ");
+        scanf("%d", &ava);
+            }
+            printf("--------------------\n");
+            printf("Em relação ao atendimento de nossos funcionarios o quao voce se considera satisfeito?\n");
+            printf("Digite sua nota de 1 a 5: ");
+            scanf("%d", &ava);
+            while(ava<1, ava>5){
+        printf("\nA opção digitada está incorreta, digite novamente: ");
+        scanf("%d", &ava);
+            }
+                        printf("--------------------\n");
+            printf("Em relacao ao nosso atendimento telefonico o quao voce se considera satisfeito??\n");
+            printf("Digite sua nota de 1 a 5: ");
+            scanf("%d", &ava);
+            while(ava<1, ava>5){
+        printf("\nA opção digitada está incorreta, digite novamente: ");
+        scanf("%d", &ava);
+            }
+            printf("\nObrigado por avaliar, suas respostas foram enviadas de maneira anonima para nosso setor de avaliação de reclamações, atendimento finalizado.");
+}
+
+void atendente(){ //Void que seja apresentado no case 4.
+    printf("Estaremos contatando um de nossos atendentes, um instante.\n");
+    printf("Infelizmente não temos nenhum atendente disponivel ou todos nossos atendentes estão ocupados, por favor tente novamente mais tarde...\n");
+}
+void finalizar(){ //Void que seja apresentado no case 5.
+    printf("Obrigado pela preferencia, seu atendimento foi finalizado.");
+}
+
+int main()
+{
+    int ent;
+    
+    inicio();
+    
+    scanf("%d", &ent);
+    while(ent<1, ent>5){ //Estrutura de repetição que não aceitara valores que nao estejam entre 1 e 5
+        printf("\nA opção digitada está incorreta, digite novamente: ");
+        scanf("%d", &ent);
+    }
+    switch(ent){ //Esta utilizando o dado que foi digitado no ent para executar uma das funcoes abaixo
+       
+        case 1: // Caso ent seja 1 vai mostrar todos os resultados dentro do void infos.
+        infos();
+        break;
+        
+        case 2: // Caso ent seja 2 vai mostrar todos os resultados dentro do void produtos.
+        produtos();
+        break;
+        
+        case 3: // Caso ent seja 3 vai mostrar todos os resultados dentro do void reclamacoes.
+        reclamar();
+        break;
+        
+        case 4: // Caso ent seja 4 vai mostrar todos os resultados dentro do void atendente.
+        atendente();
+        break;
+        
+        case 5: // Caso ent seja 5 vai mostrar todos os resultados dentro do void finalizar.
+        finalizar();
+        break;
+            
+            
+            
+    }
+    
+    return 0;
+}
