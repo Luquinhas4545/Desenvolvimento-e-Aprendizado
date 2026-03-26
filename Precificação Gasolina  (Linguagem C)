@@ -1,0 +1,31 @@
+/******************************************************************************
+
+Gasto de combustível atividade de casa.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int tempo, velom, distancia; //Declaração das váriaveis inteiras
+    
+    float gastos, glitros; //Declaração das váriaveis reais
+    
+    glitros= 12; // Declaração do consumo que o carro faz
+    
+    printf("Digite o tempo gasto da viagem em horas: "); //Saida da leitura do tempo gasto na viagem
+    scanf("%d", &tempo);//Entrada da leitura do tempo gasto na viagem
+    printf("Digite a velocidade média do veículo: ");//Saida da leitura da velocidade média utilizada na viagem
+    scanf("%d", &velom);//Entrada da leitura da velocidade média utilizada na viagem
+    
+    distancia= velom*tempo;//Calculo da velocidade multiplicada pelo tempo para se obter a distância percorrida
+    gastos= distancia/glitros;//Calculo para descobrir o total de litros gastos sobre a velocidade e o tempo médio
+    
+
+    
+    printf("\nA distancia percorrida é de: %d", distancia);//Saida que mostra o resuldado em distancia do calculo da velocidade média vezes o tempo
+    printf("\nO total gasto em litros é de: %.3f", gastos);//Saida que mostra o total gasto em litros do calculo da distancia dividido pelo consumo do carro
+    return 0;//final
+}
+
+
