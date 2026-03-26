@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int cod, coda; //declaração de variaveis
+    printf("Digite o código de origem da sua região: "); //leitura do manipulador
+    scanf("%d", &cod); //processamento da informação do manipulador
+    
+    
+    if(cod==1){ //se o código for igual a um printe a mensagem com regional Sul
+        printf("O codigo digitado tem procedencia regional Sul");
+    }
+    else{//se não
+        if(cod==2)//se o código for igual a dois printe a mensagem com regional Norte
+        printf("O codigo digitado tem procedencia regional Norte");
+    }
+    if(cod==3){//se o código for igual a três printe a mensagem com regional Leste
+        printf("O codigo digitado tem rocedencia regional Leste");
+    }
+    else{//se não
+        if(cod==4)//se o código for igual a quatro printe a mensagem com regional Oeste
+        printf("O codigo digitado tem procedencia regional Oeste");
+    }
+    if(cod==5){//se o código for igual a cinco printe a mensagem com regional Nordeste
+        printf("O codigo digitado tem procedencia regional Nordeste");
+    }
+    else{//se não
+        if(cod==6)//se o código for igual a seis printe a mensagem com regional Sudeste
+        printf("Oncosigo digitado tem procedencia regional Sudeste");
+    }
+    if(cod==7){//se o código for igual a sete printe a mensagem com regional Centro-Oeste
+        printf("O codigo digitado tem procedencia regional Centro-Oeste");
+    }
+    if(cod>=8)
+    printf("O codigo digitado esta incorreto, por favor tente novamente....");
+    return 0;
+}
+
