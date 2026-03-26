@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, tabu, calc;
+    
+    printf("Digite um numero de entrada: ");
+    scanf("%d", &tabu);
+    
+    for(i=0;i<=10;i++){
+        calc= tabu*i;
+        printf("\n%d x %d = %d", tabu,i, calc);
+    }
+    return 0;
+}
