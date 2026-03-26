@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int num, triplo;
+    
+    printf("Digite um número: ");
+    scanf("%d",&num);
+    
+    triplo=num*3;
+    
+    printf("O triplo de %d vale %d", num,triplo);
+    
+    
+    return 0;
+}
