@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int quantia, quantib, quantic, totala, totalb;//Definindo as váriaveis inteiras
+    float panda, tigre, leao, totalc;//Definindo as váriaveis real
+    
+    panda= 25;//Definindo o valor que será cobrado do panda por item
+    tigre= 20;//Definindo o valor que será cobrado do tigre por item
+    leao= 21.50;//Definindo o valor que será cobrado do leao por item
+    
+    printf("Digite a quantidade de itens do Sr.panda: ");//Solicitação de itens que o panda tem
+    scanf("%d", &quantia);//Entrada da quantidade de itens que o panda tem
+    printf("Digite a quantidade de itens do Sr.tigre: ");//Solicitação de itens que o tigre tem
+    scanf("%d", &quantib);//Entrada da quantidade de itens que o trigre tem
+    printf("Digite a quantidade de itens do Sr.leao: ");//Solicitação de itens que o leao tem
+    scanf("%d", &quantic);//Entrada da quantidade de itens que o leao tem
+    
+    totala= quantia*panda;//Calculo da quantidade de itens vezes o valor unitário de cada item do panda 
+    totalb= quantib*tigre;//Calculo da quantidade de itens vezes o valor unitário de cada item do tigre
+    totalc= quantic*leao;//Calculo da quantidade de itens vezes o valor unitário de cada item do leao
+    
+    printf("\nO valor total da compra do Sr.panda é de: %d", totala);//Resultado total da compra do panda
+    printf("\nO valor total da compra do Sr.tigre é de: %d", totalb);//Resultado total da compra do tigre
+    printf("\nO valor total da compra do Sr.leao é de: %.2f", totalc);//Resultado total da compra do leao
+
+    return 0;
+}
