@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, res;
+    
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    
+    res=n%2;
+    if(res==0){
+        printf("O número é PAR");
+    }
+    else{
+        printf("O numero é IMPAR");
+    }
+    return 0;
+}
