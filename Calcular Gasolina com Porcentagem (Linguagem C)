@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    float num, porcentagem;
+    printf("Digite o valor da gasolia: ");
+    scanf("%f", &num); /*Entrada da variavel*/
+    
+    porcentagem=(num*1.15); /* processamento do calculo da porcentagem*/
+    
+    printf("O valor da gasolina com o acrécimo de 15 porcento é de: %.2f", porcentagem);
+    //resultado do valor da gasolina com o acrécimo de 15%
+    printf("\nO valor da gasolina sem o acrécimo de 15 porcento é de: %.2f", num);
+    //Resultado do valor da gasolina sem o acrécimo de 15%
+    return 0;
+}
