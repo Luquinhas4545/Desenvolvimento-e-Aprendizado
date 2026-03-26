@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    float salario, reajuste; // declaração de variaveis decimais 
+    int porcent; //declaração de variaveis inteiras
+    
+    printf("Digite um valor salarial: "); //Entrada de informação do manipulador
+    scanf("%f", &salario);//Processamento das informaçõesdo manipulador
+    
+    if(salario<500){ //declaração se o valor for menor que 500
+        reajuste=salario * 1.15; //calculo do reajuste de 15 porcento
+        porcent=15; //declaração do printf que vai mostrar qual a porcentagem sendo calculada
+    }
+    else{ // declaração se a primeira opção for falsa 
+        if(salario>=500 && salario<=1000){ //declaração que se o valor for maior ou igual que 500 e menor ou igual a 1000
+        reajuste=salario*1.10;//calculo do reajuste de 10 porcento
+        porcent=10; //declaração do printf que vai mostrar qual a porcentagem sendo calculada
+        }
+        else{ //declaração se as opções de cima for falsa
+            reajuste=salario*1.05; //calculo do reajuste de 5 porcento
+            porcent=5; //declaraçãodo printf que vai mostrar qual a porcentagem sendo calculada
+        }
+    }
+    printf("\nO valor com reajuste de %d %%: %.2f", porcent, reajuste);//printf mostrando o resultado final
+    return 0;
+}
